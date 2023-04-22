@@ -36,6 +36,7 @@
 
             .card-shadow:hover {
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                cursor: pointer;
             }
 
 
@@ -44,7 +45,7 @@
         <script type="text/JavaScript">
             function cardClick(cardId, url) {
                 var card = document.getElementById(cardId);
-                card.style.cursor = "pointer";
+                //card.style.cursor = "pointer";
                 card.addEventListener("click", function() {
                     window.location.href = url;
                 });
