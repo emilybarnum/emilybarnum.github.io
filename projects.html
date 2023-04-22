@@ -31,6 +31,15 @@
             }
             
         </style>
+        <script type="text/JavaScript">
+            function cardClick(cardId, url) {
+                var card = document.getElementById(cardId);
+                card.addEventListener("click", function() {
+                    window.location.href = url;
+                });
+            }
+
+        </script>
     </head>
     <body>
         <!-- JavaScript -->
@@ -69,16 +78,17 @@
             <h2>Projects</h2>
             <br />
 
-            <a href="mobileid.html">
-            <div class="card mb-3">
-                <img class="card-img-top" src="MobileIDSmall.png" alt="JMU Mobile ID App Redesign">
+            
+            <div class="card mb-3" id="my-card" onclick="cardClick('my-card', 'mobileid.html')">
+                <img class="card-img-top" src="JMUMobileIDApp.png" alt="JMU Mobile ID App Redesign">
                 <div class="card-body">
                   <h5 class="card-title">JMU Mobile ID App Redesign</h5>
                   <p class="card-text">App redesign for JMU's Mobile ID App.</p>
                   <p class="card-text"><small class="text-muted">Figma</small></p>
                 </div>
             </div>
-            </a>
+              
+            
 
             <div class="card mb-3">
                 <img class="card-img-top" src="Mr-J.png" alt="Favorite Harrisonburg Restaurants">
