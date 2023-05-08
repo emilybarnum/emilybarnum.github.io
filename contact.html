@@ -29,7 +29,7 @@
                 background-color: white;
             }
             #linkedin{
-                max-width: 30%;
+                max-width: 10%;
             }
             
         </style>
@@ -71,14 +71,30 @@
             <h2>Contact</h2>
             <br />
             <p>If you have any questions about my work or experience, contact me below!</p>
-            <br /><br />
-            Connect with me on <a href="https://www.linkedin.com/in/emilycbarnum/" target="empty">LinkedIn</a>
-            <br />
-            <a href="https://www.linkedin.com/in/emilycbarnum/">
+            <br /><br /><br />
+            
+            <a href="https://www.linkedin.com/in/emilycbarnum/" target="_blank">
                 <img id="linkedin" src="LinkedIn_logo_initials.png" alt="LinkedIn">
               </a>
               
             Send me an <a href = "mailto: emilybarnum02@gmail.com">Email</a>
+
+              <form action="mailto:emilybarnum02@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br>
+              
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br>
+              
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject"><br>
+              
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea><br>
+              
+                <input type="submit" value="Send">
+              </form>
+              
         </section>
         
     </body>
