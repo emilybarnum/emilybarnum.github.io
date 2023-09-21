@@ -56,14 +56,15 @@
                 font-size: 18px;
                 border: none;
                 outline: none;
-                background-color: red;
-                color: white;
+                background-color: white;
+                color: black;
                 cursor: pointer;
                 padding: 15px;
                 border-radius: 50px;
+                box-shadow: 2px 2px 4px lightgrey;
             }
             #backToTop:hover {
-                background-color: #555;
+                background-color: grey;
             }
         </style>
     </head>
@@ -75,7 +76,7 @@
         
         <!-- Content -->
 
-        <button onclick="topFunction()" id="backToTop" title="Go to top">Top</button>
+        <button onclick="topFunction()" id="backToTop" title="Go to top">Back to Top</button>
 
         <script>
             // Get the button
@@ -98,7 +99,7 @@
               document.documentElement.scrollTop = 0;
             }
         </script>
-        
+
         <br />
         <h1>Emily Barnum</h1>
         <br />
