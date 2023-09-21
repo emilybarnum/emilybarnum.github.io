@@ -48,24 +48,12 @@
             }
 
             #backToTop {
-                display: none;
                 position: fixed;
                 bottom: 20px;
-                right: 30px;
-                z-index: 99;
-                font-size: 18px;
-                border: none;
-                outline: none;
-                background-color: white;
-                color: black;
-                cursor: pointer;
-                padding: 15px;
-                border-radius: 50px;
-                box-shadow: 2px 2px 4px lightgrey;
+                right: 20px;
+                display: none;
             }
-            #backToTop:hover {
-                background-color: grey;
-            }
+            
         </style>
     </head>
     <body>
@@ -76,8 +64,14 @@
         
         <!-- Content -->
 
-        <button onclick="topFunction()" id="backToTop" title="Go to top">Back to Top</button>
-
+        <button
+        type="button"
+        class="btn btn-danger btn-floating btn-lg"
+        id="btn-back-to-top"
+        >
+        <i class="fas fa-arrow-up"></i>
+        </button>
+        
         <script>
             // Get the button
             let mybutton = document.getElementById("backToTop");
@@ -92,12 +86,15 @@
                 mybutton.style.display = "none";
               }
             }
+            mybutton.addEventListener("click", backToTop);
+
+            function backToTop() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
             
             // When the user clicks on the button, scroll to the top of the document
-            function topFunction() {
-              document.body.scrollTop = 0;
-              document.documentElement.scrollTop = 0;
-            }
+            
         </script>
 
         <br />
