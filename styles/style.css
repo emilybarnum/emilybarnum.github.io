@@ -55,12 +55,7 @@ body {
 }
 
 /* Headshot image */
-#headshot {
-    max-width: 38%;
-    float: left;
-    padding-right: 2em;
-    padding-bottom: 1em;
-}
+
 
 /* Footnotes */
 #small {
