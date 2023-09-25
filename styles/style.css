@@ -31,11 +31,12 @@ h6 {
 body {
     margin: auto;
     font-family: Epilogue;
-    margin-top: 5em;
+    margin-top: 8em;
 }
 
 .content {
     margin: auto;
+    margin-bottom: 8em;
     width: 95%;
     padding: 1em;
     box-sizing: border-box;
@@ -53,6 +54,13 @@ body {
     cursor: pointer;
 }
 
+/* Headshot image */
+#headshot {
+    max-width: 38%;
+    float: left;
+    padding-right: 2em;
+    padding-bottom: 1em;
+}
 
 /* Custom back to top button */
 #backToTop {
