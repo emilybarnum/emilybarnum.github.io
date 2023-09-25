@@ -16,92 +16,7 @@
     <title>
         JMU MobileID App Redesign
     </title>
-    <style>
-        body {
-            margin: auto;
-            font-family: Epilogue;
-            margin-top: 5em;
-        }
-
-        h1 {
-            text-align: center;
-        }
-
-        h1:before,
-        h1:after {
-            content: "\2726";
-            padding: .5em;
-        }
-
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            font-weight: bold;
-        }
-
-        section {
-            margin: auto;
-            width: 95%;
-            padding: 1em;
-            box-sizing: border-box;
-            background-color: white;
-        }
-
-        .description {
-            font-size: 80%;
-            color: #949494;
-        }
-
-        .figma-iframe {
-            border: 1px solid rgba(0, 0, 0, 0.1);
-            width: 100%;
-            /* Make the iframe occupy the full width of its container */
-            height: 100vh;
-            /* Allow the height to adjust automatically based on the aspect ratio */
-        }
-
-        footer {
-            background-color: #8bcee0cc;
-            color: #28262c;
-            font-weight: bolder;
-            font-size: large;
-            text-align: center;
-            padding-top: 8em;
-            padding-bottom: 8em;
-        }
-
-        #backToTop {
-            display: none;
-            position: fixed;
-            font-weight: bold;
-            bottom: 20px;
-            right: 30px;
-            z-index: 99;
-            font-size: 12px;
-            border: none;
-            outline: none;
-            background-color: #28262c;
-            /*color: rgba(54, 54, 54, 0.9);*/
-            color: white;
-            cursor: pointer;
-            padding: 15px;
-            /* top-left | top-right | bottom-right | bottom-left */
-            border-radius: 50px;
-            /*box-shadow: 2px 2px 5px lightgrey;*/
-        }
-
-        /* Media query for mobile devices (adjust the max-width as needed) */
-        @media (max-width: 768px) {
-            .figma-iframe {
-                width: 100%;
-                /* Adjust the width as needed for mobile screens */
-                height: 100vh;
-            }
-        }
-    </style>
+    
 </head>
 
 <body>
@@ -160,7 +75,7 @@
     </nav>
 
 
-    <section>
+    <section class="content">
         <h3>JMU Mobile ID App Redesign</h3>
         <img src="JMUMobileIDApp.png" class="w-100 shadow-1-strong rounded mb-4" alt="JMU Mobile ID App Redesign" />
         <p class="description">Mobile ID App Redesign</p>
