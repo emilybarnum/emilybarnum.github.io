@@ -29,12 +29,16 @@ h6 {
 
 /* Page content */
 body {
+    margin: auto;
     margin-top: 10em;
     margin-bottom: 10em;
     font-family: Epilogue;
 }
 
 .content {
+    margin: auto;
+    margin-top: 10em;
+    margin-bottom: 10em;
     width: 95%;
     padding: 1em;
     box-sizing: border-box;
