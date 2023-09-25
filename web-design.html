@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/42c9ede467.js" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="icon" href="b.png">
+  <title>
+    Web Design Samples
+  </title>
+  <style>
+    body {
+      margin: auto;
+      font-family: Epilogue;
+      margin-top: 5em;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    h1:before,
+    h1:after {
+      content: "\2726";
+      padding: .5em;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-weight: bold;
+    }
+
+    section {
+      margin: auto;
+      width: 95%;
+      padding: 1em;
+      box-sizing: border-box;
+      background-color: white;
+      margin-bottom: 5em;
+    }
+
+    footer {
+      background-color: #8bcee0cc;
+      color: #28262c;
+      font-weight: bolder;
+      font-size: large;
+      text-align: center;
+      padding-top: 8em;
+      padding-bottom: 8em;
+    }
+
+    #backToTop {
+      display: none;
+      position: fixed;
+      font-weight: bold;
+      bottom: 20px;
+      right: 30px;
+      z-index: 99;
+      font-size: 12px;
+      border: none;
+      outline: none;
+      background-color: #28262c;
+      /*color: rgba(54, 54, 54, 0.9);*/
+      color: white;
+      cursor: pointer;
+      padding: 15px;
+      /* top-left | top-right | bottom-right | bottom-left */
+      border-radius: 50px;
+      /*box-shadow: 2px 2px 5px lightgrey;*/
+    }
+  </style>
+</head>
+
+<body>
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <!-- Content -->
+  <button onclick="topFunction()" id="backToTop" title="Go to top">back to top</button>
+
+  <script>
+    // Get the button
+    let mybutton = document.getElementById("backToTop");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+
+  <nav class="navbar fixed-top navbar-dark" style="background-color:#28262c">
+    <a class="navbar-brand" href="index">EMILY BARNUM</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="index">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about">About</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <br />
+
+  <section>
+
+    <h3>Web Design and Development</h3>
+    <br />
+    <p>Below are some samples of my work in web design and development. In this course I
+      learned HTML, CSS, JavaScript, jQuery, and UX Accessibility.
+    </p>
+    <br />
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">CSS Shapes</h5>
+              <p class="card-text">
+              <ul>
+                <li>CSS Shapes using border-radius</li>
+                <li>CSS Box Model</li>
+                <li>Float Elements</li>
+              </ul>
+              </p>
+              <img src="Mr-J.png" class="w-100 shadow-1-strong rounded mb-4" alt="Restaurant Assignment" />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">JavaScript Buttons</h5>
+              <p class="card-text">
+              <ul>
+                <li>Image Float</li>
+                <li>Resize Text Buttons</li>
+                <li>Light/Dark Mode Toggle</li>
+              </ul>
+              </p>
+              <div class="embed-responsive embed-responsive-16by9 border p-2">
+                <video class="embed-responsive-item" controls>
+                  <source src="Sushi.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">JavaScript Validation</h5>
+              <p class="card-text">
+              <ul>
+                <li>Draggable Elements</li>
+                <li>Droppable Boxes</li>
+                <li>Validation</li>
+              </ul>
+              </p>
+              <div class="embed-responsive embed-responsive-16by9 border p-2">
+                <video class="embed-responsive-item" controls>
+                  <source src="Draganddrop.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">jQuery Utilities</h5>
+              <p class="card-text">
+              <ul>
+                <li>Tooltips</li>
+                <li>Datepicker</li>
+                <li>Sortable Lists</li>
+                <li>jQuery UI Theme</li>
+              </ul>
+              </p>
+              <div class="embed-responsive embed-responsive-16by9 border p-2">
+                <video class="embed-responsive-item" controls>
+                  <source src="jQueryUtilities.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <h1>THANKS FOR VISITING MY PAGE</h1>
+    <h4>contact me</h4>
+    <br />
+    <a class="btn btn-primary btn-lg" href="https://www.linkedin.com/in/emilycbarnum/" role="button" target="_blank">
+      <i class="fab fa-linkedin-in"></i></a>
+    <a class="btn btn-dark btn-lg" href="mailto:emilybarnum@gmail.com" role="button" target="_blank">
+      <i class="fa-regular fa-envelope"></i></a>
+  </footer>
+
+</body>
+
+</html>
