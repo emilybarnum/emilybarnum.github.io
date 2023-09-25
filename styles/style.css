@@ -34,8 +34,7 @@ body {
 }
 
 .content {
-    margin-left: 1em;
-    margin-right:1em;
+    margin:auto;
     margin-bottom: 8em;
     margin-top:8em;
     width: 95%;
