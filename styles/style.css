@@ -31,12 +31,13 @@ h6 {
 body {
     margin: auto;
     font-family: Epilogue;
-    margin-top: 8em;
 }
 
 .content {
-    margin: auto;
+    margin-left: 1em;
+    margin-right:1em;
     margin-bottom: 8em;
+    margin-top:8em;
     width: 95%;
     padding: 1em;
     box-sizing: border-box;
@@ -55,7 +56,12 @@ body {
 }
 
 /* Headshot image */
-
+#headshot {
+    max-width: 38%;
+    float: left;
+    padding-right: 2em;
+    padding-bottom: 1em;
+}
 
 /* Footnotes */
 #small {
