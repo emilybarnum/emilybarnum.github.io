@@ -109,7 +109,8 @@ body {
 
 /* Footer */
 footer {
-    background-color: #8bcee0cc;
+    /*background-color: #8bcee0cc;*/
+    background-color: #F0EDE9;
     color: #28262c;
     font-weight: bolder;
     font-size: large;
